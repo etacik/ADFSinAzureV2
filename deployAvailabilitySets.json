@@ -5,6 +5,9 @@
     "location": {
       "type": "string"
     },
+    "environment": {
+      "type": "string"
+    },
     "availabilitySetNames": {
       "type": "array"
     }
@@ -16,10 +19,10 @@
       "apiVersion": "2015-06-15",
       "location": "[parameters('location')]",
       "copy": {
-        "name":"avsetCopy",
-        "count": 3
+        "name": "avsetCopy",
+        "count": 5
       },
-      "properties": {}
+      "properties": { }
     }
   ]
 }

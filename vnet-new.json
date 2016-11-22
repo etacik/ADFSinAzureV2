@@ -2,6 +2,9 @@
   "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
+    "environment": {
+      "type": "string"
+    },
     "location": {
       "type": "string"
     },
@@ -11,10 +14,13 @@
     "virtualNetworkAddressRange": {
       "type": "string"
     },
+    "DNSAddressforVNet": {
+      "type": "string"
+    },
     "subnets": {
       "type": "array"
     },
-    "resourceGroupName":{
+    "resourceGroupName": {
       "type": "string"
     }
   },
@@ -30,7 +36,8 @@
             "[parameters('virtualNetworkAddressRange')]"
           ]
         },
-        "subnets": "[parameters('subnets')]"
+        "subnets": "[parameters('subnets')]",
+        "DNSAddressforVNet": "[parameters('DNSAddressforVNet')]"
       }
     }
   ],

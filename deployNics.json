@@ -180,6 +180,90 @@
           }
         ]
       }
+    },
+    {
+      "comments": "PA01 NIC",
+      "name": "[parameters('nicNames')[6]]",
+      "type": "Microsoft.Network/networkInterfaces",
+      "location": "[parameters('location')]",
+      "apiVersion": "2015-06-15",
+      "properties": {
+        "ipConfigurations": [
+          {
+            "name": "ipconfig1",
+            "properties": {
+              "privateIPAllocationMethod": "Static",
+              "privateIPAddress": "[parameters('ipAddresses')[6]]",
+              "subnet": {
+                "id": "[parameters('subnetIds')[2]]"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "comments": "PA02 NIC",
+      "name": "[parameters('nicNames')[7]]",
+      "type": "Microsoft.Network/networkInterfaces",
+      "location": "[parameters('location')]",
+      "apiVersion": "2015-06-15",
+      "properties": {
+        "ipConfigurations": [
+          {
+            "name": "ipconfig1",
+            "properties": {
+              "privateIPAllocationMethod": "Static",
+              "privateIPAddress": "[parameters('ipAddresses')[7]]",
+              "subnet": {
+                "id": "[parameters('subnetIds')[2]]"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "comments": "JB01 NIC",
+      "name": "[parameters('nicNames')[8]]",
+      "type": "Microsoft.Network/networkInterfaces",
+      "location": "[parameters('location')]",
+      "apiVersion": "2015-06-15",
+      "properties": {
+        "ipConfigurations": [
+          {
+            "name": "ipconfig1",
+            "properties": {
+              "privateIPAllocationMethod": "Static",
+              "privateIPAddress": "[parameters('ipAddresses')[8]]",
+              "subnet": {
+                "id": "[parameters('subnetIds')[3]]"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "comments": "JB02 NIC",
+      "name": "[parameters('nicNames')[9]]",
+      "type": "Microsoft.Network/networkInterfaces",
+      "location": "[parameters('location')]",
+      "apiVersion": "2015-06-15",
+      "properties": {
+        "ipConfigurations": [
+          {
+            "name": "ipconfig1",
+            "properties": {
+              "privateIPAllocationMethod": "Static",
+              "privateIPAddress": "[parameters('ipAddresses')[9]]",
+              "subnet": {
+                "id": "[parameters('subnetIds')[3]]"
+              }
+            }
+          }
+        ]
+      }
     }
   ],
   "outputs": {
