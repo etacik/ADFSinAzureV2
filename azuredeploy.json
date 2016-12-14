@@ -261,7 +261,7 @@
     }
   },
     "variables": {
-      "baseUrl": "https://raw.githubusercontent.com/etacik/adadfs/master/",
+      "baseUrl": "https://raw.githubusercontent.com/etacik/adfsinazure/master/",
       "storageAccountNamePrefix": "[concat(uniquestring(resourceGroup().id),'sa')]",
       "deployStorageAccountsUrl": "[concat(variables('baseUrl'),'/deployStorageAccounts.json')]",
       "deployPublicIPsUrl": "[concat(variables('baseUrl'),'/deployPublicIPs.json')]",
