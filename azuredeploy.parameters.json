@@ -112,6 +112,9 @@
     },
     "jumpboxVMsSize": {
       "value": "Standard_A1"
-    }
+    },
+    "adminUsername": {
+      "value": "etacik"
+      }
   }
 }
