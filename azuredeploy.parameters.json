@@ -115,6 +115,9 @@
     },
     "adminUsername": {
       "value": "etacik"
-      }
+    },
+    "adminPassword": {
+      "value": "terps108****"
+    }
   }
 }
